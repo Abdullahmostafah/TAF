@@ -1,0 +1,105 @@
+### ================================================ ###
+### Ultimate Test Automation .gitignore              ###
+### Optimized for:                                   ###
+### - Selenium WebDriver                             ###
+### - Appium Mobile Testing                          ###
+### - Cucumber BDD                                   ###
+### - TestNG/JUnit                                   ###
+### ================================================ ###
+
+### --- IDE & Build Systems --- ###
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# Build artifacts
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+
+### --- Dependency Management --- ###
+node_modules/          # Appium/WebdriverIO
+*.cache               # Dependency caches
+
+### --- Test Output --- ###
+# Allure
+allure-results/
+allure-report/
+
+# Extent/Other Reports
+extent-reports/
+test-output/
+reports/
+surefire-reports/
+failsafe-reports/
+
+# Framework-specific
+*.json                # Cucumber JSON reports
+*.log                 # Execution logs
+*.tmp                 # Temp files
+*.bak                 # Backup files
+hs_err_pid*           # JVM crash logs
+
+### --- WebDriver Executables --- ###
+chromedriver*         # Chrome
+geckodriver*          # Firefox
+msedgedriver*         # Edge
+IEDriverServer*       # IE
+/appium*              # Appium desktop app
+
+### --- Environment & Secrets --- ###
+.env
+.env.*
+*.properties          # Except whitelisted below
+*.keystore
+*.jks
+*credentials*
+*password*
+
+### --- System Files --- ###
+.DS_Store
+Thumbs.db
+
+### === WHITELISTED FILES === ###
+# Build Config
+!/.gitignore
+!/pom.xml
+!/build.gradle
+!/mvnw
+!/mvnw.bat
+!/gradlew
+!/gradlew.bat
+
+# Framework Configs
+!/allure*.bat
+!/allure.properties
+!/extent.properties
+!/cucumber.properties
+!/testng.xml
+!/junit-platform.properties
+
+# Test Resources
+!/*.feature           # Cucumber feature files
+!/src/                # All source code
+!/resources/          # Test resources
+
+# Sample Configs
+!/config-sample.properties
+!/env.example
+
+# Documentation
+!/README.md
+!/LICENSE
