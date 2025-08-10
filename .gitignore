@@ -41,7 +41,7 @@ allure-report/
 
 # Extent/Other Reports
 extent-reports/
-test-output/
+#test-output/
 reports/
 surefire-reports/
 failsafe-reports/
@@ -94,6 +94,7 @@ Thumbs.db
 # Test Resources
 !/*.feature           # Cucumber feature files
 !/src/                # All source code
+!/src/test/           # Explicitly include test directory
 !/resources/          # Test resources
 
 # Sample Configs
